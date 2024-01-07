@@ -10,11 +10,11 @@ exclude:
 
 # Site settings
 title: LYC's Blog
-subtitle: "A simple yet classy theme for your Jekyll website or blog"
+subtitle: "Welcome to my blog!"
 email: liyuanchen23@outlook.com
 name: Yuanchen Li
 description: >
-  A simple yet classy theme for your Jekyll website or blog.
+  Welcome to my blog!
 # Base URL of site (i.e. /blog). It should always start with a slash,
 # and never end with a slash. Set it to a blank value if hosting at the
 # root of your server.
@@ -77,17 +77,13 @@ descriptions:
 #     share: true                           # Include in the "Share" section of posts
 social:
   - name: Luogu
-    icon: luogu
     username: 洛谷：liyuanchen2021
     url: https://www.luogu.com.cn/user/557680
-    desc: 洛谷：liyuanchen2021
     share: true
 
   - name: GitHub
-    icon: github
-    username: lycblog
+    username: GitHub：lycblog
     url: https://github.com/lycblog
-    desc: GitHub：lycblog
     share: true
 
 # Social sharing protocols
