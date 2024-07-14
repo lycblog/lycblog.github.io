@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <id>https://lycblog.github.io</id>
+    <title>LYC&apos;s Blog</title>
+    <updated>2024-07-14T08:33:22.707Z</updated>
+    <generator>https://github.com/jpmonette/feed</generator>
+    <link rel="alternate" href="https://lycblog.github.io"/>
+    <link rel="self" href="https://lycblog.github.io/atom.xml"/>
+    <subtitle>Welcome to my blog!</subtitle>
+    <logo>https://lycblog.github.io/images/avatar.png</logo>
+    <icon>https://lycblog.github.io/favicon.ico</icon>
+    <rights>All rights reserved 2024, LYC&apos;s Blog</rights>
+    <entry>
+        <title type="html"><![CDATA[CSP 注意事项合集]]></title>
+        <id>https://lycblog.github.io/post/csp-zhu-yi-shi-xiang-he-ji/</id>
+        <link href="https://lycblog.github.io/post/csp-zhu-yi-shi-xiang-he-ji/">
+        </link>
+        <updated>2024-07-03T11:04:41.000Z</updated>
+        <content type="html"><![CDATA[<p>本文转自：<a href="https://www.luogu.com.cn/article/6b9etd56">https://www.luogu.com.cn/article/6b9etd56</a></p>
+<h2 id="一-操作系统">一、操作系统</h2>
+<ol>
+<li>如果机房的电脑上安装了虚拟机，<strong>切勿私自退出虚拟机！</strong></li>
+<li>如遇死机、崩溃、硬件故障等异常情况，<strong>请举手向监考人员求助</strong>。</li>
+</ol>
+<h2 id="二-idecodeblocks">二、IDE（Code::Blocks）</h2>
+<ol>
+<li>由于 Code::Blocks <strong>不支持中文目录</strong>，请勿在“桌面”“下载”等中文目录中保存！</li>
+<li>切换标签页时不要太快，如果双击某个标签页将会进入全屏模式。</li>
+<li>保存文件时，注意在后面输入后缀名 <code>.cpp</code>。</li>
+</ol>
+<h2 id="三-运行和调试">三、运行和调试</h2>
+<ol>
+<li>建议点击“Build and run”运行程序。</li>
+<li>如果要直接在终端中输入和输出，需在运行代码前注释两行 <code>freopen</code>，<strong>在提交程序前去掉 <code>freopen</code> 前的注释</strong>。</li>
+</ol>
+<h2 id="四-提交代码">四、提交代码</h2>
+<ol>
+<li><strong>不要直接在程序回收系统中编写或修改代码，以免出现代码丢失的情况！</strong></li>
+<li>提交代码前，请先删除 <code>freopen</code> 前的注释，确保文件输入输出部分正确。</li>
+<li><strong>提交代码后，不要删除操作系统中的代码，以防万一。</strong></li>
+<li>比赛的最后几分钟，再次检查代码是否出现低级错误（如文件输入输出）。</li>
+<li><strong>不要在比赛的最后几分钟在程序回收系统中提交代码</strong>，比赛结束时回收系统将关闭。</li>
+</ol>
+<h2 id="五-其他">五、其他</h2>
+<ol>
+<li>如果正解写不出来，先写部分分或特殊性质解法。</li>
+<li>写暴力解法时，尽量将数组大小开到高分数据范围。</li>
+</ol>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[【置顶】Windows 系统下使用 VMware Workstation 安装 NOI Linux 2.0 指南]]></title>
+        <id>https://lycblog.github.io/post/windows-xi-tong-xia-shi-yong-vmware-workstation-an-zhuang-noi-linux-20-zhi-nan/</id>
+        <link href="https://lycblog.github.io/post/windows-xi-tong-xia-shi-yong-vmware-workstation-an-zhuang-noi-linux-20-zhi-nan/">
+        </link>
+        <updated>2024-07-03T11:02:34.000Z</updated>
+        <content type="html"><![CDATA[<p>本文转自：<a href="https://www.luogu.com.cn/article/jyulnf3b">https://www.luogu.com.cn/article/jyulnf3b</a></p>
+<h2 id="开始安装">开始安装</h2>
+<p><a href="https://www.noi.cn/gynoi/jsgz/2021-07-16/732450.shtml">NOI Linux 2.0 介绍</a></p>
+<p>使用虚拟机安装 NOI Linux 2.0 前，<strong>您的电脑需要具备以下条件：</strong></p>
+<ul>
+<li>处理器：64 位，支持虚拟化（Intel VT-x 或 AMD-V）；</li>
+<li>硬盘：30G 以上剩余硬盘空间（虚拟硬盘 20G+虚拟机信息 5G+ISO 文件 5G）；</li>
+<li>主机内存：4G 及以上（这样可以让给拟机分配至少 2G 内存空间）；</li>
+<li>操作系统：Windows 7 及以上。</li>
+</ul>
+<p><strong>重要提示：安装前请确认 BIOS 设置中 Intel VT-x 或 AMD-V 处于打开状态，否则导致虚拟机安装失败！</strong></p>
+<h2 id="一-安装-vmware-workstation-player">一、安装 VMware Workstation Player</h2>
+<p>安装虚拟机之前，要安装虚拟机运行软件。这里，作者推荐 VMware Workstation Player。安装 NOI Linux 2.0 时，<strong>只需下载免费版即可</strong>。</p>
+<ol>
+<li>进入 VMware Workstation 官网。用鼠标右键点击以下链接，然后点击“在新标签页中打开链接”。</li>
+</ol>
+<p><a href="https://www.vmware.com/products/workstation-player.html">https://www.vmware.com/products/workstation-player.html</a></p>
+<ol start="2">
+<li>进入官网后，点击“DOWNLOAD FOR FREE”。</li>
+</ol>
+<figure data-type="image" tabindex="1"><img src="https://cdn.luogu.com.cn/upload/image_hosting/g3rkhtbt.png" alt="" loading="lazy"></figure>
+<ol start="3">
+<li>点击“GO TO DOWNLOADS”。</li>
+</ol>
+<figure data-type="image" tabindex="2"><img src="https://cdn.luogu.com.cn/upload/image_hosting/awy53hp9.png" alt="" loading="lazy"></figure>
+<ol start="4">
+<li>找到适用于 Windows 系统的版本，点击“DOWNLOAD NOW”，即可开始下载。</li>
+</ol>
+<figure data-type="image" tabindex="3"><img src="https://cdn.luogu.com.cn/upload/image_hosting/kajdjan5.png" alt="" loading="lazy"></figure>
+<ol start="5">
+<li>下载之后打开安装包进行安装。安装时请根据安装程序提示操作。</li>
+</ol>
+<h2 id="二-下载-noi-linux-20-iso-文件">二、下载 NOI Linux 2.0 ISO 文件</h2>
+<p><strong>请确保下载文件夹所在的硬盘有 5G 的剩余空间。</strong></p>
+<p>直接点击以下链接下载（来自 NOI 官网）：</p>
+<p><a href="https://noiresources.ccf.org.cn/ubuntu-noi-v2.0.iso">https://noiresources.ccf.org.cn/ubuntu-noi-v2.0.iso</a></p>
+<p>由于文件较大，此过程可能需要几分钟到十几分钟的时间。</p>
+<h2 id="三-在-vmware-workstation-player-中创建虚拟机">三、在 VMware Workstation Player 中创建虚拟机</h2>
+<p><strong>请确保您的硬盘有 25G 的剩余空间（虚拟硬盘 20G+虚拟机信息 5G）。</strong></p>
+<ol>
+<li>安装 VMware Workstation Player 之后，打开该软件。由于这是第一次打开，会出现以下界面：</li>
+</ol>
+<figure data-type="image" tabindex="4"><img src="https://cdn.luogu.com.cn/upload/image_hosting/4ne69wts.png" alt="" loading="lazy"></figure>
+<p>选择“免费将 VMware Workstation 17 Player 用于非商业用途”，然后点击“继续”。</p>
+<ol start="2">
+<li>然后会出现以下界面，点击“完成”即可。</li>
+</ol>
+<figure data-type="image" tabindex="5"><img src="https://cdn.luogu.com.cn/upload/image_hosting/8hukoaeh.png" alt="" loading="lazy"></figure>
+<ol start="3">
+<li>进入 VMware Workstation Player 主页后，点击“创建新虚拟机”。</li>
+</ol>
+<figure data-type="image" tabindex="6"><img src="https://cdn.luogu.com.cn/upload/image_hosting/urc4snyu.png" alt="" loading="lazy"></figure>
+<ol start="4">
+<li>这时会出现新建虚拟机向导。</li>
+</ol>
+<p><strong>请勿在新建虚拟机向导中选择“安装程序光盘映像文件”！</strong></p>
+<figure data-type="image" tabindex="7"><img src="https://cdn.luogu.com.cn/upload/image_hosting/hb1owt27.png" alt="" loading="lazy"></figure>
+<p>直接安装程序光盘映像文件将会进入简易安装，作者个人认为简易安装有以下缺点：</p>
+<ul>
+<li>安装的是英文版，需要在安装后手动设置语言</li>
+<li>安装模式为最小安装，相比正常安装少了许多工具</li>
+</ul>
+<p>所以，<strong>强烈建议稍后安装操作系统</strong>，这样可以避开简易安装。</p>
+<figure data-type="image" tabindex="8"><img src="https://cdn.luogu.com.cn/upload/image_hosting/fowydwrz.png" alt="" loading="lazy"></figure>
+<ol start="5">
+<li>接下来选择虚拟机操作系统。操作系统选择 Linux，版本选择 Ubuntu 64 位。</li>
+</ol>
+<figure data-type="image" tabindex="9"><img src="https://cdn.luogu.com.cn/upload/image_hosting/zmnta1wr.png" alt="" loading="lazy"></figure>
+<ol start="6">
+<li>根据自己的实际情况，设置虚拟机名称和存放位置。</li>
+</ol>
+<figure data-type="image" tabindex="10"><img src="https://cdn.luogu.com.cn/upload/image_hosting/c62q2xxi.png" alt="" loading="lazy"></figure>
+<ol start="7">
+<li>指定虚拟机硬盘的大小，建议在 20G 到 30G 之间。</li>
+</ol>
+<figure data-type="image" tabindex="11"><img src="https://cdn.luogu.com.cn/upload/image_hosting/9h57l3md.png" alt="" loading="lazy"></figure>
+<ol start="8">
+<li>完成虚拟机配置后，会出现以下界面，点击“自定义硬件”。</li>
+</ol>
+<figure data-type="image" tabindex="12"><img src="https://cdn.luogu.com.cn/upload/image_hosting/tcx51o8e.png" alt="" loading="lazy"></figure>
+<ol start="9">
+<li>在左侧设备栏中点击“CD/DVD”，然后点击“使用 ISO 镜像文件”，选择下载好的 NOI Linux 2.0 ISO 文件。</li>
+</ol>
+<figure data-type="image" tabindex="13"><img src="https://cdn.luogu.com.cn/upload/image_hosting/biw2piep.png" alt="" loading="lazy"></figure>
+<p>操作完成后点击“关闭”，再点击“确定”关闭第 8 步出现的弹窗。</p>
+<h2 id="四-在刚刚创建好的虚拟机上安装-noi-linux-20-系统">四、在刚刚创建好的虚拟机上安装 NOI Linux 2.0 系统</h2>
+<p><strong>在安装系统前，请将网络断开，否则安装会慢！</strong></p>
+<ol>
+<li>创建完虚拟机后，点击“播放虚拟机”以启动虚拟机。</li>
+</ol>
+<figure data-type="image" tabindex="14"><img src="https://cdn.luogu.com.cn/upload/image_hosting/1nxep96w.png" alt="" loading="lazy"></figure>
+<p>在出现“Checking disks”的时候，可按 Ctrl+C 跳过。</p>
+<p><strong>重要提示：在虚拟机中按下按键前，必须先点击虚拟机屏幕。如果要回到主操作系统，请同时按下 Ctrl+Alt。</strong></p>
+<ol start="2">
+<li>在系统启动后，出现安装界面时，先在左侧的语言栏中找到并选择“中文（简体）”，再点击“安装 Ubuntu”。</li>
+</ol>
+<figure data-type="image" tabindex="15"><img src="https://cdn.luogu.com.cn/upload/image_hosting/pyrks4b4.png" alt="" loading="lazy"></figure>
+<ol start="3">
+<li>
+<p>一直点“继续”，直到出现“安装类型”界面为止。</p>
+</li>
+<li>
+<p>在“安装类型”界面直接点击“现在安装”。</p>
+</li>
+</ol>
+<figure data-type="image" tabindex="16"><img src="https://cdn.luogu.com.cn/upload/image_hosting/kwisv50b.png" alt="" loading="lazy"></figure>
+<p>出现提示框时点击“继续”。</p>
+<figure data-type="image" tabindex="17"><img src="https://cdn.luogu.com.cn/upload/image_hosting/tbq3r7fn.png" alt="" loading="lazy"></figure>
+<ol start="5">
+<li>在地图上选择您所在的位置。</li>
+</ol>
+<figure data-type="image" tabindex="18"><img src="https://cdn.luogu.com.cn/upload/image_hosting/z0wr6huv.png" alt="" loading="lazy"></figure>
+<ol start="6">
+<li>输入用户名和密码。</li>
+</ol>
+<figure data-type="image" tabindex="19"><img src="https://cdn.luogu.com.cn/upload/image_hosting/3je3le4a.png" alt="" loading="lazy"></figure>
+<ol start="7">
+<li>系统会进入安装过程，整个过程大约需要十几分钟的时间。</li>
+</ol>
+<figure data-type="image" tabindex="20"><img src="https://cdn.luogu.com.cn/upload/image_hosting/ac7gmjil.png" alt="" loading="lazy"></figure>
+<ol start="8">
+<li>安装完成后，重启虚拟机。</li>
+</ol>
+<figure data-type="image" tabindex="21"><img src="https://cdn.luogu.com.cn/upload/image_hosting/57ht92z0.png" alt="" loading="lazy"></figure>
+<p><strong>重要提示：当系统提示“Please remove the installtion medium, then press ENTER”时，按下 Enter 即可。</strong></p>
+<ol start="9">
+<li>输入账号和密码，开始使用虚拟机。</li>
+</ol>
+<figure data-type="image" tabindex="22"><img src="https://cdn.luogu.com.cn/upload/image_hosting/acxyuzc6.png" alt="" loading="lazy"></figure>
+<figure data-type="image" tabindex="23"><img src="https://cdn.luogu.com.cn/upload/image_hosting/64h7uf01.png" alt="" loading="lazy"></figure>
+<h2 id="大功告成">大功告成！</h2>
+<p>之后每次进入 VMware Workstation Player 时，双击虚拟机即可启动 NOI Linux 2.0。</p>
+<figure data-type="image" tabindex="24"><img src="https://cdn.luogu.com.cn/upload/image_hosting/qlk4mr2z.png" alt="" loading="lazy"></figure>
+<h2 id="常见问题">常见问题</h2>
+<h3 id="一在全屏模式下显示区域太小">（一）在全屏模式下，显示区域太小</h3>
+<p>解决步骤：</p>
+<ol>
+<li>先点击显示区域的右上角，再点击“设置”。</li>
+</ol>
+<figure data-type="image" tabindex="25"><img src="https://cdn.luogu.com.cn/upload/image_hosting/skhtdqi5.png" alt="" loading="lazy"></figure>
+<ol start="2">
+<li>在设置中找到“显示器”，将屏幕分辨率设为适合自己电脑屏幕大小的分辨率，如 1360x768。</li>
+</ol>
+<figure data-type="image" tabindex="26"><img src="https://cdn.luogu.com.cn/upload/image_hosting/8zekuhdi.png" alt="" loading="lazy"></figure>
+<ol start="3">
+<li>点击右上角“应用”。</li>
+</ol>
+<figure data-type="image" tabindex="27"><img src="https://cdn.luogu.com.cn/upload/image_hosting/tvxjdu1o.png" alt="" loading="lazy"></figure>
+<ol start="4">
+<li>此时屏幕分辨率会调整，点击“保留更改”即可。</li>
+</ol>
+<figure data-type="image" tabindex="28"><img src="https://cdn.luogu.com.cn/upload/image_hosting/pmyu9dli.png" alt="" loading="lazy"></figure>
+<h3 id="二如何在-codeblocks-ide-中开启-o2-优化">（二）如何在 Code::Blocks IDE 中开启 O2 优化</h3>
+<p>步骤：</p>
+<ol>
+<li>点击“Settings”中的“Compliter...”选项。</li>
+</ol>
+<figure data-type="image" tabindex="29"><img src="https://cdn.luogu.com.cn/upload/image_hosting/w2q9otrb.png" alt="" loading="lazy"></figure>
+<ol start="2">
+<li>勾选“Have g++ follow the C++14 ISO language standard [-std=c++14]”和“[-O2]”选项后点击确定即可。</li>
+</ol>
+<figure data-type="image" tabindex="30"><img src="https://cdn.luogu.com.cn/upload/image_hosting/4a4w19hc.png" alt="" loading="lazy"></figure>
+<figure data-type="image" tabindex="31"><img src="https://cdn.luogu.com.cn/upload/image_hosting/xy1nwe4g.png" alt="" loading="lazy"></figure>
+<h3 id="三如何在-linux-环境下比较两个文件的差异忽略行末空格以及文件末换行符">（三）如何在 Linux 环境下比较两个文件的差异（忽略行末空格以及文件末换行符）</h3>
+<p>方法：打开终端，在终端中调用命令行 <code>diff -Z [文件名] [文件名]</code>（将 <code>[文件名]</code> 分别替换成要比较的两个文件的文件名，<code>-Z</code> 代表忽略行末空格以及文件末换行符）。</p>
+<h3 id="其他关于-noi-linux-20-安装及使用上的问题欢迎在评论区中提出">其他关于 NOI Linux 2.0 安装及使用上的问题欢迎在评论区中提出</h3>
+<h2 id="相关文章">相关文章</h2>
+<ul>
+<li><a href="https://www.luogu.com.cn/article/tjc5fjj7">Linux/Mac 对拍模板</a> by <a href="https://www.luogu.com.cn/user/557680">liyuanchen2021</a></li>
+</ul>
+<p>更多文章，敬请期待~</p>
+]]></content>
+    </entry>
+</feed>
